@@ -2,10 +2,10 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Admin</title>
 </head>
 <body>
-Welcome Home!
+Welcome Admin
 <p sec:authentication="principal.id"></p>
 <p sec:authentication="principal.username"></p>
 <form method="post" th:action="@{/logout}">
